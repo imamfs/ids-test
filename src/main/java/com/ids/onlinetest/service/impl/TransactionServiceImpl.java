@@ -45,7 +45,7 @@ public class TransactionServiceImpl implements TransactionService {
 			String transactionDate = data.getTransactionDate().toInstant().atZone(ZoneId.systemDefault())
 					.format(DATE_FORMATTER);
 
-			return ListTrxDTO.builder().id(data.getId()).productId(data.getProduct().getProductId())
+			return ListTrxDTO.builder().id(data.getId()).productID(data.getProduct().getProductId())
 					.productName(data.getProduct().getProductName()).amount(formatAmount(data.getAmount()))
 					.customerName(data.getCustomer().getCustomerName()).status(data.getStatus())
 					.transactionDate(transactionDate).createdBy(data.getCustomer().getCustomerName())

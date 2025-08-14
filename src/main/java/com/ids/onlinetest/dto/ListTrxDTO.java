@@ -13,7 +13,7 @@ public class ListTrxDTO {
 
 	private Long id;
 	
-	private String productId;
+	private String productID;
 	
 	private String productName;
 	
